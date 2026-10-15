@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puzzibly Delete Your Data</title>
+<style>
+:root { --bg: #fbf4eb; --ink: #31231b; --faint: #72665e; --accent: #c2410c; --card: #fefbf7; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1d1714; --ink: #f3ebe4; --faint: #b8aca3; --accent: #fb923c; --card: #2a221d; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+.card { background: var(--card); border-radius: 18px; padding: 8px 24px 24px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 24px 0 8px; }
+h2 { font-size: 22px; margin: 32px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 4px; }
+p, li { color: var(--ink); }
+a { color: var(--accent); }
+.brand { color: var(--accent); font-weight: 700; letter-spacing: 2px; font-size: 14px; }
+footer { color: var(--faint); font-size: 14px; margin-top: 24px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+<div class="brand">PUZZIBLY</div>
+<div class="card">
+<h1>Delete Your Puzzibly Data</h1>
+<p>This page explains how to ask for your data in <strong>Puzzibly</strong> (the puzzle game by <strong>iota</strong> on Google Play and the App Store) to be deleted.
+Puzzibly has no accounts, so your data is found by your game ID.</p>
+<h2>Steps</h2>
+<ol>
+<li>Open Puzzibly and go to <strong>Settings &gt; About</strong>.</li>
+<li>Next to <strong>Game ID</strong>, tap <strong>Copy</strong>.</li>
+<li>Email <strong><a href="mailto:puzzibly.studio@gmail.com">puzzibly.studio@gmail.com</a></strong> with the subject "Delete my data" and paste your game ID into the message.</li>
+<li>We delete your data within 30 days and reply to tell you when it is done.</li>
+</ol>
+<p>If you can't open the app any more, email us anyway and tell us what you remember (for example your player name), and we'll do our best to find your data.</p>
+<h2>What we delete</h2>
+<p>From our game server and database:</p>
+<ul>
+<li>your game results, puzzle history and stats</li>
+<li>your Ranked ratings, season standings and region</li>
+<li>your badges</li>
+<li>your player name and supporter badge</li>
+<li>your notification token</li>
+<li>your phone's secret key (used to check that requests come from your phone)</li>
+<li>the puzzle and player-name reports you sent</li>
+<li>Premium codes you redeemed</li>
+</ul>
+<p>We also ask PostHog, our analytics provider, to delete the match events stored with your game ID.</p>
+<p>Groups you own pass to the member who has been in them longest, or close if you are the only member.</p>
+<h2>What we keep, and for how long</h2>
+<ul>
+<li><strong>Purchase records:</strong> kept for as long as Google Play, the App Store and tax law require, because we must keep them for accounting.</li>
+<li><strong>Usage statistics:</strong> these are stored under a random analytics ID that we can't link to your game ID, so we can't find them. PostHog deletes them after one year.</li>
+<li><strong>Crash reports:</strong> these contain no game ID. Sentry deletes them after 90 days.</li>
+</ul>
+<h2>Data on your phone</h2>
+<p>Your progress, coins, cosmetics, settings and other data stored on your phone are deleted when you uninstall the app.</p>
+<p>See our <a href="../privacy/">Privacy Policy</a> for more detail.</p>
+</div>
+<footer>Puzzibly by iota &middot; <a href="mailto:puzzibly.studio@gmail.com">puzzibly.studio@gmail.com</a></footer>
+</main>
+</body>
+</html>
